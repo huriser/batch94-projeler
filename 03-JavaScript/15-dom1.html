@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- `` ==> backtick(string literal) -->
+    
+    <h1 class= "name">Ali Can</h1> <!-- Html kismi -->
+    <p class="mesaj"></p>
+
+<!-- dom = document object model -->
+    <script> /* Java Script kismi */
+     let isim = document.querySelector(".name").innerText; //Ali Can'i verir
+     document.querySelector(".mesaj").innerText = `Merhaba ${isim}`; //secilen text'i p tagina yerlestirdik
+
+     document.querySelector(".mesaj").innerHTML = `Merhaba<b> ${isim} </b>`; //innerHTML kullanarak b tagini uyguladik
+    </script>
+</body>
+</html>

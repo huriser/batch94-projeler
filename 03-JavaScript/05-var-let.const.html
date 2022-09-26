@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var x = 5;
+        var x = 6;
+        console.log(x);
+
+        var x = 4;
+        x = 8;
+        console.log(x);
+
+//var'da tekrarli deger verebiliriz.en son girdigimiz degeri console'a yazdirir
+//let'te tekrar durumunda hata verir.
+
+        let y = 5;
+         y = 7;
+         console.log(y);
+
+         var x= 5;
+         var k;const d = 2; //const'ta ilk deger atanmak zorundadir ve degistirilemez
+         console.log(x,k,d); // aralarina virgul koyarak yazdirilabilir
+        
+//javascript case sensitive'dir.camelCase kullanilir ama class olusturuken PascalCase kullanilir
+//var globaldir.heryerde kullanilir
+//let ve const scope'dur.atandigi yerde kullanilabilir
+
+
+       let enBuyukTamsayi =  Number.MAX_SAFE_INTEGER;
+       console.log(enBuyukTamsayi);
+
+       console.log(enBuyukTamsayi+5 == enBuyukTamsayi+6);
+
+//en buyuk tamsayidan daha buyuk sayilarla islem yapmak icin sonuna n harfi koyarsak BigInt kullanilir(var x=100n)
+       var testTamsayi = 12354789652486556669555n;
+       console.log(testTamsayi+5n==testTamsayi+6n);
+    
+//typeOf() girilen degerin data tipini gosterir  
+
+       let s = '12';
+       console.log(s);
+       console.log(typeof(s));
+    </script>
+</body>
+</html>

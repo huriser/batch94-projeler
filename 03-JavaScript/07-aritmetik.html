@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+ //const veya let ile degisken tanimlandiginda,ayni scope icinde ayni isimde
+ //baska bir degisken tanimlanmasina izin vermez      
+       const x = 5;
+        const y = "5";
+        const z = x * y; //sadece toplama islemini yapmiyor ama diger islemlerini yapiyor.
+        console.log(z);  // 25  yazdirir.toplamada concatinate ve toplama oldugu icin algilayamiyor
+    </script>
+</body>
+</html>

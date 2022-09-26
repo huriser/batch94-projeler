@@ -1,0 +1,19 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+nav.menu{
+    background-color: grey;
+    text-align: center;
+    width: 150px;
+}
+.active{
+    background-color: black;
+    
+}
+a.link{
+    color: white;
+    font-family: 700px;
+}
+a{
+    text-decoration: none;
+}

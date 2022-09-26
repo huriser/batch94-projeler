@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="Ortalama" onclick="ortalama()">
+    
+
+    <script>
+        function ortalama(){
+
+        
+        let sayilar = [12, 56, 14, 67, 89, 33, 22];
+        let toplam = 0;
+
+        for(let i=0; i<sayilar.length; i++){
+            toplam =  toplam + sayilar[i];
+            
+            
+
+        }
+        console.log(toplam);
+
+        let avg = toplam / sayilar.length;
+        console.log(avg.toFixed());
+        document.write("Sayilarin ortalamasi=" + avg.toFixed() + "<br>");
+
+        let kucukSayi = avg;
+        let sayac = 0;
+        for(let i = 0; i<sayilar.length; i++){
+            let kucukSayiAdedi =0;
+            
+            if(sayilar[i]<kucukSayi){
+              kucukSayiAdedi += sayilar[i];
+              sayac++;
+              document.write(kucukSayiAdedi + "<br>");
+              
+
+            }
+           
+
+        }
+
+        //alert("Ortalamadan kucuk sayilarin adedi =" + sayac); 
+    }
+      
+    </script>
+</body>
+</html>
